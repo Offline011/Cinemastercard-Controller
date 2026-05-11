@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Контроль залов</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Контроль залов кинотеатра</h1>
+  <p>Каждый зал должен проверяться минимум 1 раз в час</p>
+</header>
+
+<div class="topbar">
+  <input type="file" id="excelFile" accept=".xls,.xlsx">
+  <button onclick="resetChecks()">Сбросить проверки</button>
+</div>
+
+<div id="sessions"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
